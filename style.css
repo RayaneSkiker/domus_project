@@ -1,5 +1,5 @@
 body{
-    background-color: lightgreen;
+    background-color: rgb(65, 141, 166);
 }
 
 #welcome_message{
@@ -8,8 +8,8 @@ body{
     border-radius: 25px;
     font-size: xx-large;
     text-align: center;
-    background-color: green;
-    border: 5px solid yellow;
+    background-color: blue;
+    border: 5px solid darkblue;
 }
 
 #saved_houses{
