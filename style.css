@@ -1,0 +1,20 @@
+body{
+    background-color: lightgreen;
+}
+
+#welcome_message{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    border-radius: 25px;
+    font-size: xx-large;
+    text-align: center;
+    background-color: green;
+    border: 5px solid yellow;
+}
+
+#saved_houses{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+}
