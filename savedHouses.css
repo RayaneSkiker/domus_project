@@ -1,6 +1,24 @@
 body{
     background-color: rgb(40,47,75);
 }
+#saved_houses{
+    /* border: 10px black solid; */
+    width: 20%;
+}
+
+.text_box{
+    border: 10px black solid;
+    height: 12vh;
+    width: 70%;
+    margin-left: 14%;
+    background-color: white;
+}
+.img_box{
+    border: 10px black solid;
+    height: 20vh;
+    margin-top: 10%;
+    background-color: white;
+}
 
 #welcome_message{
     color: white;
@@ -12,7 +30,19 @@ body{
 }
 
 #saved_houses{
+    color: black;
+    text-align: center;
+}
+
+h1{
     color: white;
     text-align: center;
-    font-size: x-large;
+}
+
+@media (max-width: 568px){
+    #saved_houses{
+        /* border: 10px black solid; */
+        width: 70%;
+        font-size: xx-small;
+    }
 }

@@ -1,8 +1,6 @@
 // HOME PAGE FUNCTIONALITY
 
-let firstDisplayImg = document.getElementById("img_1");
-let firstImg = firstDisplayImg.src;
-//let propImgOne;
+// API doesn't work as intended, so everything is hardcoded
 
 const sidePannel = document.getElementById("custom_scroll_viewer_container")
 
@@ -111,29 +109,6 @@ function updateValue(event){
     userLocation = event.target.value;
     let inputs = userLocation.split(",");
     inputItemsArray = inputs;
-    const url = "https://zillow-com1.p.rapidapi.com/propertyExtendedSearch?location=" + inputItemsArray[0] + "%2C%20" + inputItemsArray[1] + "&status_type=ForRent&home_type=Houses&rentMaxPrice=" + inputItemsArray[2];
-    const options = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': 'e309529736msh3a788b3324fce96p1ec799jsn65b5d82a450c',
-            'X-RapidAPI-Host': 'zillow-com1.p.rapidapi.com'
-        }
-    };
-    
-    function random(){
-        try {
-            fetch(url, options)
-            .then((response) => response.json())
-            .then((data) => {
-                console.log(data.props[0].imgSrc);
-                firstDisplayImg.src = data.props[0].imgSrc;
-            })
-        } catch (error) {
-            console.error(error);
-        }
-    }
-    
-    random();
 }
 
 buttonLeft.addEventListener("click", () =>{

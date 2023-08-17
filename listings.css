@@ -96,6 +96,10 @@ button{
     overflow-y: hidden;
 }
 @media (max-width: 568px){
+    .text_box{
+        font-size: xx-small;
+    }
+    
     #img_box{
         width: 30%
     }
