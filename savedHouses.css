@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(40,47,75);
+}
+
+#welcome_message{
+    color: white;
+    border-radius: 25px;
+    font-size: xx-large;
+    text-align: center;
+    background-color: rgb(20,27,55);
+    border: 5px solid rgb(127,229,212);
+}
+
+#saved_houses{
+    color: white;
+    text-align: center;
+    font-size: x-large;
+}
