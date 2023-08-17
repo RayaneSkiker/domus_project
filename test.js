@@ -111,7 +111,29 @@ function updateValue(event){
     userLocation = event.target.value;
     let inputs = userLocation.split(",");
     inputItemsArray = inputs;
-    firstDisplayImg.src.innerHTML = "https://img.staticmb.com/mbcontent/images/uploads/2022/12/Most-Beautiful-House-in-the-World.jpg";
+    const url = "https://zillow-com1.p.rapidapi.com/propertyExtendedSearch?location=" + inputItemsArray[0] + "%2C%20" + inputItemsArray[1] + "&status_type=ForRent&home_type=Houses&rentMaxPrice=" + inputItemsArray[2];
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'e309529736msh3a788b3324fce96p1ec799jsn65b5d82a450c',
+            'X-RapidAPI-Host': 'zillow-com1.p.rapidapi.com'
+        }
+    };
+    
+    function random(){
+        try {
+            fetch(url, options)
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data.props[0].imgSrc);
+                firstDisplayImg.src = data.props[0].imgSrc;
+            })
+        } catch (error) {
+            console.error(error);
+        }
+    }
+    
+    random();
 }
 
 buttonLeft.addEventListener("click", () =>{
