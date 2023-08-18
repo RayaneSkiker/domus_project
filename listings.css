@@ -1,90 +1,90 @@
 body{
     background-color: rgb(40,47,75);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #Home_Container{
     border: 10px black solid;
-    width: 99%;
-    height: 100vh; /* Use viewport height units */
+    width: 100%;
+    height: 90vh; /* Use viewport height units */
     overflow: auto; /* Enable scrolling if content overflows */
-    margin-left: 10px;
-    margin-top: 2%;
     background-color: rgb(127,229,212);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
+
 #Title{
-    /* display: flex;
-    justify-content: center; */
     border: 10px black solid;
     height: 10vh;
+    width:30%;
     text-align: center;
     background-color: rgb(127,229,212);
+
 }
-#Line1{
-    /* border: 10px black solid; */
-    width: 99%;
-    height: 50vh;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
+
+.home{
+    width: 200px;
+    height: 50px;
+    margin-left: 50px;
 }
-#Line2{
-    /* border: 10px black solid; */
-    width: 99%;
-    height: 50vh;
-    display: flex;
-    justify-content: space-evenly;
-    /* margin-top: 5%; */
+
+.home:hover .img_box{
+    border-top: solid 10px teal;
 }
-#Line3{
-    border: 10px black solid;
-    width: 99%;
-    height: 20vh;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 5%;
-}
-#Home1{
-    /* border: 10px black solid; */
-    width: 20%;
-}
-#Home2{
-    /* border: 10px black solid; */
-    width: 20%;
-}
-#Home3{
-    /* border: 10px black solid; */
-    width: 20%;
-}
-#Home4{
-    /* border: 10px black solid; */
-    width: 20%;
+
+.home:hover .button_container{
+    border-bottom: solid 5px teal;
 }
 
 .text_box{
-    border: 10px black solid;
-    height: 12vh;
-    width: 70%;
-    margin-left: 14%;
+    height: 30px;
+    width: 100%;
+    padding-top: 3px;
     background-color: white;
+    display: flex;
+    justify-content: center;
 }
 .img_box{
-    border: 10px black solid;
     height: 20vh;
     margin-top: 10%;
     background-color: white;
 }
-button{
-    /* margin-top: 10%; */
-    margin-left: 4%;
-    width: 20%;
-    height: 3vh
-}
+
 .button_container{
-    /* border: 10px black solid; */
+    display: flex;
+    height:30px;
+    justify-content: space-around;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+
+
+
+button{
+    width: 20%;
+    height: 3vh;
+    border:1px solid green;
+    background-color: white;
+    color: green;
     display: flex;
     justify-content: center;
-    padding-top: 2%;
 }
+
+button:hover{
+    border:1px solid white;
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+
 #Desc_container{
     border: 10px black solid;
     width: 27.9%;
@@ -95,11 +95,20 @@ button{
     display: none;
     overflow-y: hidden;
 }
+
+
+
+
+
+
 @media (max-width: 568px){
-    .text_box{
-        font-size: xx-small;
+    #Title{
+        display: flex;
+        font-size: x-small;
+        justify-content: center;
+        align-items: center;
     }
-    
+
     #img_box{
         width: 30%
     }

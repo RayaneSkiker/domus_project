@@ -498,29 +498,92 @@ body::-webkit-scrollbar{
 }
 
 #questionSet1{
-background-color: blue;
 }
 #image_for_question_set1{
     height:100%;
-    width:30%;
+    width:60%;
     background-color: yellow;
 }
 
 #left_of_questionsSet{
     height:100%;
-    width: 70%;
-    background-color: green;
+    width: 40%;
+
 
 }
 #questionsContainer_set1{
     width:100%;
     height:80%;
-    background-color: orange;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
 
+
+#str_address{
+
+}
+
+.input{
+    width:80%;
+    height:30px;
+    border-radius: 5px;
+    border: none;
+}
+
+#city{
+
+}
+
+#state{
+
+}
+
+#zip{
+
+}
+#current_question_set{
+height:5%;
+width:100%;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+font-size: 2rem;
+color:white
+}
 #next_previous_btns{
-    width:100%;
-    height:20%;
-    background-color: red;
+    width:30%;
+    height:15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:absolute;
+    bottom:20px;
+    right:12%;
+}
+
+#previous_btn{
+height:40px;
+width:80px;
+background-color: green;
+display: flex;
+justify-content: space-around;
+align-items: center;
+cursor: pointer;
+}
+
+#next_btn{
+    height:40px;
+    width:80px;
+    background-color: green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hidden_question_set{
+    display: none;
 }
  /* --------------------------------------SECTION 3 (RESPONSIVENESS)*/
