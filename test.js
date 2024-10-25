@@ -1,3 +1,5 @@
+<script src = "config.js"></script>
+
 // HOME PAGE FUNCTIONALITY
 
 // let firstDisplayImg = document.getElementById("img_1");
@@ -181,12 +183,12 @@ function updateValue(event){
     userLocation = event.target.value;
     let inputs = userLocation.split(",");
     inputItemsArray = inputs;
-    const url = "https://zillow-com1.p.rapidapi.com/propertyExtendedSearch?location=" + inputItemsArray[0] + "%2C%20" + inputItemsArray[1] + "&status_type=ForRent&home_type=Houses&rentMaxPrice=" + inputItemsArray[2];
+    const url = config["API-URL"] + inputItemsArray[2];
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'e309529736msh3a788b3324fce96p1ec799jsn65b5d82a450c',
-            'X-RapidAPI-Host': 'zillow-com1.p.rapidapi.com'
+            'X-RapidAPI-Key': config["API-Key"],
+            'X-RapidAPI-Host': config["API-Host"]
         }
     };
     
